@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Крестики нолики...</title>
+	<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Mansalva', monospace;
+		}
+		.wrapper {
+			width: 100%;
+			height: 100%;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+			text-align: center;
+			user-select: none;
+			max-width: 350px;
+			margin: auto;
+		}
+		button {
+			user-select: none;
+			background-color: #af8;
+			border: none;
+			width: 50px;
+			height: 50px;
+			cursor: pointer;
+			outline: none;
+			margin: 5px;
+			font-family: 'Mansalva', cursive;
+		}
+
+		button::disabled {
+			background-color: yellow;
+		}
+		.wrapper_btns {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+			-ms-align-items: center;
+			align-items: center;
+			-webkit-flex-wrap: wrap;
+			-moz-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			-o-flex-wrap: wrap;
+			flex-wrap: wrap;
+		}
+		button {
+			flex-basis: 30%;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Крестики нолики!</h1>
+	<div class="wrapper_btns">
+		<button></button>
+		<button></button>
+		<button></button>
+		<button></button>
+		<button></button>
+		<button></button>
+		<button></button>
+		<button></button>
+		<button></button>
+	</div>
+		<p>Ходит <span>иксик</span></p>
+		<small>Счет: <br><br>X - <span class="xx" style="margin-right: 10px">2</span> O - <span class="oo">1</span></small>
+		<p id="friends">
+			
+		</p>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
